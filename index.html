@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper & Scissor</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="result">
+            <span id="declare">🙄🙄🙄</span>
+        </div>
+        <div id="top">
+            <div id="topleft">
+                <div class="containers" id="blank1" value="0"> <strong>...</strong>
+                </div>
+                <div class="containers" id="rockop" style="display: none;">
+                    <i class="ri-octagon-fill"></i>
+                </div>
+                <div class="containers" id="paperop" style="display: none;">
+                    <i class="ri-file-paper-2-fill"></i>
+                </div>
+                <div class="containers" id="scissorop" style="display: none;">
+                    <i class="ri-scissors-2-fill"></i>
+                </div>
+            </div>
+            <div id="topright">
+                <div class="containers" id="blank2" style="opacity: 1;"> <strong>...</strong>
+                </div>
+                <div class="containers" id="rockcpu" style="opacity: 0;">
+                    <i class="ri-octagon-fill"></i>
+                </div>
+                <div class="containers" id="papercpu" style="opacity: 0;">
+                    <i class="ri-file-paper-2-fill"></i>
+                </div>
+                <div class="containers" id="scissorcpu" style="opacity: 0;">
+                    <i class="ri-scissors-2-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="containers" id="rockuser" onclick="rock()">
+                <i class="ri-octagon-fill"></i>
+            </div>
+            <div class="containers" id="paperuser" onclick="paper()">
+                <i class="ri-file-paper-2-fill"></i>
+            </div>
+            <div class="containers" id="scissoruser" onclick="scissor()">
+                <i class="ri-scissors-2-fill"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
